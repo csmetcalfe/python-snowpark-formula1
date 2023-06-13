@@ -1,4 +1,4 @@
-schedules:
+{# schedules:
       - name : checking
         schedule: "*/10 * * * *" #the schedule cron configuration or use "OFF" to disable. Verify cron syntax at https://crontab.guru
         environment: production #DO NOT CHANGE THIS
@@ -11,4 +11,4 @@ schedules:
             - passed # remove to notify only on schedule run failure
             - failed 
         email_notify: #the email addresses to notify
-            - himanshugoel@bitgo.com
+            - himanshugoel@bitgo.com #}
