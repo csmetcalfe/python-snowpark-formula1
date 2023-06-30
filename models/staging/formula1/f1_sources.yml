@@ -7,13 +7,14 @@ sources:
     schema: raw
     tables:
 
-      - name: circuits
+      - name: circuits wallet_cleanup
         description: One record per circuit, which is the specific race course. 
         columns:
-          - name: circuit_id
+          - name: wallet_id
             tests:
-            - unique
+            - unique 4 tests, accepted_values: coin eth, btc 
             - not_null
+            - 
             description: Unique identifier for the circuit
           - name: circuit_ref
             description: Unique circuit reference
